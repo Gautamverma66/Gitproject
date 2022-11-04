@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(255, 74, 198);
+}
+.main1-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    padding: 0.1rem 1rem;
+    margin-bottom: 2rem;
+
+}
+#main{
+    width: 60%;
+    margin: 2rem auto;
+}
+h1{
+    font-size: 1.5rem;
+
+}
+.main1-head span{
+    font-size: 1.5rem;
+    color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+.main1-para{
+    display: none;
+    border: 2px solid red;
+    border-top: none;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+
+
+}
+.main1-head span:hover{
+    transform: scale(1.3);
+}
