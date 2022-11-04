@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+        <link rel="stylesheet" href="page.css">
+    </head>
+    <body>
+        
+        <div id="main">
+            <div class="main1">
+                <div class="main1-head">
+                    <h1>Java</h1>
+                    <span class="fas fa-plus-circle"></span>
+                </div>
+                <div class="main1-para">
+                    <p>Java is a widely used object-oriented programming language and software platform that runs on billions of devices, including notebook computers, mobile devices, gaming consoles, medical devices and many others. The rules and syntax of Java are based on the C and C++ languages.</p>
+                </div>
+
+            </div>
+            <div class="main1">
+                <div  class="main1-head">
+                    <h1>Python</h1>
+                    <span class="fas fa-plus-circle"></span>
+                </div>
+                <div class="main1-para">
+                    <p>Python is a computer programming language often used to build websites and software, automate tasks, and conduct data analysis. Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems</p>
+                </div>
+
+            </div>
+            <div class="main1">
+                <div class="main1-head">
+                    <h1>JavaScript</h1>
+                    <span class="fas fa-plus-circle"></span>
+                </div>
+                <div class="main1-para">
+                    <p>JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.</p>
+                </div>
+
+            </div>
+            <div class="main1">
+                <div class="main1-head">
+                    <h1>React</h1>
+                    <span class="fas fa-plus-circle"></span>
+                </div>
+                <div class="main1-para">
+                    <p>What Is React? React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.</p>
+                </div>
+
+            </div>
+            
+        </div>
+        <script>
+            let spans=document.querySelectorAll('span')
+            spans.forEach((ele)=>{
+                ele.onclick=(curr)=>{
+                    console.log(ele)
+                    console.log(curr)
+                    if(curr.target.classList.contains("fa-plus-circle")){
+                        curr.target.parentElement.nextElementSibling.style.display="block";
+                        curr.target.classList.remove('fa-plus-circle')
+                        curr.target.classList.add('fa-minus-circle')
+                    }
+                    else{
+                        curr.target.parentElement.nextElementSibling.style.display="none";
+                        curr.target.classList.remove('fa-minus-circle')
+                        curr.target.classList.add('fa-plus-circle')
+                    }
+                }
+            })
+        </script>
+       
+    </body>
+</html>

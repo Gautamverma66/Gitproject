@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+#top{
+    display:flex;
+    height: 70px;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  
+    
+    
+}
+#logo img{
+    height: 55px;
+}
+#menu ul{
+    display: flex;
+}
+#menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+#banner{
+    background: url('solar-panel-colorful-.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover ;  
+  
+}
+#para{
+    padding: 2rem;
+    text-align: center;
+    font-size: 25px;
+    color: #666;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.content img{
+    width: 30%;
+    
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    
+}
+.content div{
+width: 60%;
+}
+footer{
+    background-color: black;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+#socal ul{
+    display: flex;
+    list-style-type: none;
+    
+  
+    
+   
+}
+#socal ul li i{
+     
+    margin: 0 0.5rem;
+    border:1px solid white;
+    border-radius: 15%;
+    font-size: 1.5rem;
+    padding: 0.25rem;
+
+   
+   
+}
+input[type="submit"] {
+    background-color: red; 
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 3px;
+}
